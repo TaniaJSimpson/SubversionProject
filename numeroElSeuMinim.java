@@ -7,6 +7,7 @@ public class ElMinim {
 
 	public static void main(String[] args) {
 
+		//Instanciem la classe Scanner
 		Scanner lector = new Scanner(System.in);
 		//Creem una nova variable
 
