@@ -8,6 +8,7 @@ public class ElMinim {
 	public static void main(String[] args) {
 
 		Scanner lector = new Scanner(System.in);
+		//Creem una nova variable
 
 		int[] valors = new int[10];
 		int i;
