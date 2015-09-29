@@ -1,42 +1,27 @@
-package numerosElSeuMinim;
+package elMinim;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class numeroElSeuMinim {
-	
+public class ElMinim {
 
 	public static void main(String[] args) {
-		
-		int[] valors= new int[5];
-		DemanarValorsUsuari();
-		TrobarMinim(valors);
-		System.out.println ("El valor més petit és: "+ valors[0]);
-		
 
-	}
-	
-	public static void DemanarValorsUsuari() {
-		
-		Scanner lector= new Scanner(System.in);
-		
-		int[] valors= new int [5];
-		
-		System.out.println ("Escriu 5 valors a l'atzar: ");
-	
-		valors= lector.nextInt();
-	}
-	
-	public static void TrobarMinim(int[] valors) {
-		
-		for (int i=0; i<valors.length; i++) {
-				
-				Arrays.sort(valors);
+		Scanner lector = new Scanner(System.in);
+
+		int[] valors = new int[5];
+		int i;
+
+		do {
+			System.out.println("Entre un numero: ");
+			for (i = 0; i < 5; i++) {
+				valors[i] = lector.nextInt();
 			}
-			
-		}
-	
-		
+		} while (i < valors.length);
+
+		Arrays.sort(valors);
+
+		System.out.println(valors[0]);
 	}
 
-
+}
