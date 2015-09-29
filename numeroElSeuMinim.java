@@ -9,19 +9,19 @@ public class ElMinim {
 
 		Scanner lector = new Scanner(System.in);
 
-		int[] valors = new int[5];
+		int[] valors = new int[10];
 		int i;
 
 		do {
 			System.out.println("Entre un numero: ");
-			for (i = 0; i < 5; i++) {
+			for (i = 0; i < 10; i++) {
 				valors[i] = lector.nextInt();
 			}
 		} while (i < valors.length);
 
 		Arrays.sort(valors);
 
-		System.out.println(valors[0]);
+		System.out.println("El seu mínim és: "+valors[0]+". I el seu màxim: "+valors[9]+".");
 	}
 
 }
